@@ -28,6 +28,9 @@ public struct AddDirtyScrollOverlayModifier<Overlay: View>: ViewModifier {
     // MARK: - ViewModifier
 
     public func body(content: Content) -> some View {
-        Color.blue
+        OverlayContainerDirtyScrollOverlayView(
+            background: content,
+            content: overlay
+        )
     }
 }

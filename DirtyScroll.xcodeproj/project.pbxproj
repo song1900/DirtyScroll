@@ -12,6 +12,10 @@
 		5F4A3EF42B2F2D940018F2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4A3EF32B2F2D940018F2EE /* Assets.xcassets */; };
 		5F4A3EF72B2F2D940018F2EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4A3EF62B2F2D940018F2EE /* Preview Assets.xcassets */; };
 		5F4A3EFE2B2F326C0018F2EE /* DirtyScrollModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4A3EFD2B2F326C0018F2EE /* DirtyScrollModifier.swift */; };
+		5FF82C2D2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82C2C2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift */; };
+		5FF82C302B3309AD00322068 /* OverlayContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 5FF82C2F2B3309AD00322068 /* OverlayContainer */; };
+		5FF82C322B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82C312B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift */; };
+		5FF82C342B330C6400322068 /* OverlayContainerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82C332B330C6400322068 /* OverlayContainerCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,9 @@
 		5F4A3EF32B2F2D940018F2EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F4A3EF62B2F2D940018F2EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F4A3EFD2B2F326C0018F2EE /* DirtyScrollModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyScrollModifier.swift; sourceTree = "<group>"; };
+		5FF82C2C2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayContainerDirtyScrollOverlayView.swift; sourceTree = "<group>"; };
+		5FF82C312B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayContainerRepresentableAdaptor.swift; sourceTree = "<group>"; };
+		5FF82C332B330C6400322068 /* OverlayContainerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayContainerCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FF82C302B3309AD00322068 /* OverlayContainer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +66,9 @@
 				5F4A3EF32B2F2D940018F2EE /* Assets.xcassets */,
 				5F4A3EF52B2F2D940018F2EE /* Preview Content */,
 				5F4A3EFD2B2F326C0018F2EE /* DirtyScrollModifier.swift */,
+				5FF82C2C2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift */,
+				5FF82C312B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift */,
+				5FF82C332B330C6400322068 /* OverlayContainerCoordinator.swift */,
 			);
 			path = DirtyScroll;
 			sourceTree = "<group>";
@@ -86,6 +97,9 @@
 			dependencies = (
 			);
 			name = DirtyScroll;
+			packageProductDependencies = (
+				5FF82C2F2B3309AD00322068 /* OverlayContainer */,
+			);
 			productName = DirtyScroll;
 			productReference = 5F4A3EEC2B2F2D900018F2EE /* DirtyScroll.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 5F4A3EE32B2F2D8F0018F2EE;
+			packageReferences = (
+				5FF82C2E2B3309AC00322068 /* XCRemoteSwiftPackageReference "OverlayContainer" */,
+			);
 			productRefGroup = 5F4A3EED2B2F2D900018F2EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FF82C2D2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift in Sources */,
+				5FF82C342B330C6400322068 /* OverlayContainerCoordinator.swift in Sources */,
 				5F4A3EF22B2F2D900018F2EE /* ContentView.swift in Sources */,
+				5FF82C322B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift in Sources */,
 				5F4A3EFE2B2F326C0018F2EE /* DirtyScrollModifier.swift in Sources */,
 				5F4A3EF02B2F2D900018F2EE /* DirtyScrollApp.swift in Sources */,
 			);
@@ -348,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5FF82C2E2B3309AC00322068 /* XCRemoteSwiftPackageReference "OverlayContainer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/applidium/OverlayContainer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5FF82C2F2B3309AD00322068 /* OverlayContainer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FF82C2E2B3309AC00322068 /* XCRemoteSwiftPackageReference "OverlayContainer" */;
+			productName = OverlayContainer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F4A3EE42B2F2D8F0018F2EE /* Project object */;
 }
