@@ -16,6 +16,9 @@
 		5FF82C302B3309AD00322068 /* OverlayContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 5FF82C2F2B3309AD00322068 /* OverlayContainer */; };
 		5FF82C322B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82C312B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift */; };
 		5FF82C342B330C6400322068 /* OverlayContainerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82C332B330C6400322068 /* OverlayContainerCoordinator.swift */; };
+		5FF82C452B3B194B00322068 /* DirtyScrollBehaviorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82C442B3B194B00322068 /* DirtyScrollBehaviorValue.swift */; };
+		5FF82C482B3B1A2800322068 /* OverlayDragArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82C472B3B1A2800322068 /* OverlayDragArea.swift */; };
+		5FF82C4A2B3B1A7700322068 /* ActivatedOverlayArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82C492B3B1A7700322068 /* ActivatedOverlayArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		5FF82C2C2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayContainerDirtyScrollOverlayView.swift; sourceTree = "<group>"; };
 		5FF82C312B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayContainerRepresentableAdaptor.swift; sourceTree = "<group>"; };
 		5FF82C332B330C6400322068 /* OverlayContainerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayContainerCoordinator.swift; sourceTree = "<group>"; };
+		5FF82C442B3B194B00322068 /* DirtyScrollBehaviorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyScrollBehaviorValue.swift; sourceTree = "<group>"; };
+		5FF82C472B3B1A2800322068 /* OverlayDragArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayDragArea.swift; sourceTree = "<group>"; };
+		5FF82C492B3B1A7700322068 /* ActivatedOverlayArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivatedOverlayArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +67,13 @@
 		5F4A3EEE2B2F2D900018F2EE /* DirtyScroll */ = {
 			isa = PBXGroup;
 			children = (
+				5FF82C462B3B1A1600322068 /* Handle */,
+				5FF82C412B3B184100322068 /* OverlayContainer */,
 				5F4A3EEF2B2F2D900018F2EE /* DirtyScrollApp.swift */,
 				5F4A3EF12B2F2D900018F2EE /* ContentView.swift */,
 				5F4A3EF32B2F2D940018F2EE /* Assets.xcassets */,
 				5F4A3EF52B2F2D940018F2EE /* Preview Content */,
 				5F4A3EFD2B2F326C0018F2EE /* DirtyScrollModifier.swift */,
-				5FF82C2C2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift */,
-				5FF82C312B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift */,
-				5FF82C332B330C6400322068 /* OverlayContainerCoordinator.swift */,
 			);
 			path = DirtyScroll;
 			sourceTree = "<group>";
@@ -79,6 +84,26 @@
 				5F4A3EF62B2F2D940018F2EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5FF82C412B3B184100322068 /* OverlayContainer */ = {
+			isa = PBXGroup;
+			children = (
+				5FF82C2C2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift */,
+				5FF82C312B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift */,
+				5FF82C332B330C6400322068 /* OverlayContainerCoordinator.swift */,
+				5FF82C442B3B194B00322068 /* DirtyScrollBehaviorValue.swift */,
+			);
+			path = OverlayContainer;
+			sourceTree = "<group>";
+		};
+		5FF82C462B3B1A1600322068 /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+				5FF82C472B3B1A2800322068 /* OverlayDragArea.swift */,
+				5FF82C492B3B1A7700322068 /* ActivatedOverlayArea.swift */,
+			);
+			path = Handle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,10 +183,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FF82C2D2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift in Sources */,
+				5FF82C4A2B3B1A7700322068 /* ActivatedOverlayArea.swift in Sources */,
+				5FF82C482B3B1A2800322068 /* OverlayDragArea.swift in Sources */,
 				5FF82C342B330C6400322068 /* OverlayContainerCoordinator.swift in Sources */,
 				5F4A3EF22B2F2D900018F2EE /* ContentView.swift in Sources */,
 				5FF82C322B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift in Sources */,
 				5F4A3EFE2B2F326C0018F2EE /* DirtyScrollModifier.swift in Sources */,
+				5FF82C452B3B194B00322068 /* DirtyScrollBehaviorValue.swift in Sources */,
 				5F4A3EF02B2F2D900018F2EE /* DirtyScrollApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

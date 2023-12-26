@@ -15,19 +15,21 @@ struct OverlayContainerRepresentableAdaptor<Content: View, Background: View> {
         let transaction: Transaction
     }
     
+    let containerState: OverlayContainerState
+    let passiveContainer: OverlayContainerPassiveContainer
     let content: Content
     let background: Background
     
     private let style: OverlayContainerViewController.OverlayStyle = .expandableHeight
     
-    func makeCoordinator() {
+    func makeCoordinator() -> OverlayContainerCoordinator {
         let contentController = UIHostingController(rootView: content)
         contentController.view.backgroundColor = .clear
         contentController.view.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
         contentController.view.setContentHuggingPriority(.defaultLow, for: .vertical)
         let backgroundController = UIHostingController(rootView: background)
         backgroundController.view.backgroundColor = .clear
-//        return
+        return OverlayContainerCoordinator()
     }
     
     func makeUIViewController(context: Context) -> OverlayContainerViewController {
