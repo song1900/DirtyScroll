@@ -8,8 +8,6 @@
 import OverlayContainer
 import SwiftUI
 
-// (gz) 2022-01-30 `SwiftUI` compares struct properties one by one to determine either to update the view or not.
-// To avoid useless updates, we wrap th e passive values inside this class.
 class OverlayContainerPassiveContainer: Equatable {
 
     var onTranslation: ((OverlayTranslation) -> Void)?

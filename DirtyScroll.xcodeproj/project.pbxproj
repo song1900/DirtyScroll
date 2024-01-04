@@ -12,6 +12,7 @@
 		5F4A3EF42B2F2D940018F2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4A3EF32B2F2D940018F2EE /* Assets.xcassets */; };
 		5F4A3EF72B2F2D940018F2EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4A3EF62B2F2D940018F2EE /* Preview Assets.xcassets */; };
 		5F4A3EFE2B2F326C0018F2EE /* DirtyScrollModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4A3EFD2B2F326C0018F2EE /* DirtyScrollModifier.swift */; };
+		5FCC487B2B46EC31006EF80E /* SwiftUIOverlayContainerRepresentableAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC487A2B46EC31006EF80E /* SwiftUIOverlayContainerRepresentableAdaptor.swift */; };
 		5FF82C2D2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82C2C2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift */; };
 		5FF82C302B3309AD00322068 /* OverlayContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 5FF82C2F2B3309AD00322068 /* OverlayContainer */; };
 		5FF82C322B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82C312B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift */; };
@@ -28,6 +29,7 @@
 		5F4A3EF32B2F2D940018F2EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F4A3EF62B2F2D940018F2EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F4A3EFD2B2F326C0018F2EE /* DirtyScrollModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyScrollModifier.swift; sourceTree = "<group>"; };
+		5FCC487A2B46EC31006EF80E /* SwiftUIOverlayContainerRepresentableAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIOverlayContainerRepresentableAdaptor.swift; sourceTree = "<group>"; };
 		5FF82C2C2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayContainerDirtyScrollOverlayView.swift; sourceTree = "<group>"; };
 		5FF82C312B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayContainerRepresentableAdaptor.swift; sourceTree = "<group>"; };
 		5FF82C332B330C6400322068 /* OverlayContainerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayContainerCoordinator.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				5FF82C312B3309DF00322068 /* OverlayContainerRepresentableAdaptor.swift */,
 				5FF82C332B330C6400322068 /* OverlayContainerCoordinator.swift */,
 				5FF82C442B3B194B00322068 /* DirtyScrollBehaviorValue.swift */,
+				5FCC487A2B46EC31006EF80E /* SwiftUIOverlayContainerRepresentableAdaptor.swift */,
 			);
 			path = OverlayContainer;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FF82C2D2B3306B900322068 /* OverlayContainerDirtyScrollOverlayView.swift in Sources */,
+				5FCC487B2B46EC31006EF80E /* SwiftUIOverlayContainerRepresentableAdaptor.swift in Sources */,
 				5FF82C4A2B3B1A7700322068 /* ActivatedOverlayArea.swift in Sources */,
 				5FF82C482B3B1A2800322068 /* OverlayDragArea.swift in Sources */,
 				5FF82C342B330C6400322068 /* OverlayContainerCoordinator.swift in Sources */,

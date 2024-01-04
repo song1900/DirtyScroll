@@ -37,5 +37,14 @@ struct OverlayContainerRepresentableAdaptor<Content: View, Background: View> {
         controller.delegate = context.coordinator
         return controller
     }
+    
+    func updateUIViewController(_ container: OverlayContainerViewController,
+                                context: Context) {
+        context.coordinator.move(
+            container,
+            to: containerState,
+            animated: context.transaction.animation != nil
+        )
+    }
 }
 
